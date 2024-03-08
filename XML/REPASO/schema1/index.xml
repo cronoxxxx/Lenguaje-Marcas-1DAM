@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marcadores xsi:noNamespaceSchemaLocation="ejemplo.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <pagina>
+        <marcador>lo que sea</marcador>
+        <veces>23 veces</veces>
+        <tiempo_seg>1.8</tiempo_seg>
+    </pagina>
+    <pagina>
+        <marcador>xd</marcador>
+        <veces>25</veces>
+        <tiempo_seg>2.4</tiempo_seg>
+    </pagina>
+    <pagina>
+        <marcador>ssdsad</marcador>
+        <veces>43</veces>
+        <tiempo_seg>2.4</tiempo_seg>
+    </pagina>
+</marcadores>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Customer xsi:noNamespaceSchemaLocation="schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <IDCust>12345</IDCust>
+    <NameCust>Alicia</NameCust>
+    <Street>calle del Pez </Street>
+    <NumStreet>31</NumStreet>
+    <PostalCode>28056</PostalCode>
+    <City>Madrid</City>
+    <Phone>345-567-153</Phone>
+    <DateOfBirth>2001-08-14</DateOfBirth>
+    <Discount>true</Discount>
+   </Customer>

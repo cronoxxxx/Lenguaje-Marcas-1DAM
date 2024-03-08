@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marcadores xsi:noNamespaceSchemaLocation="ejemplo.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+     <!--sequence: tenemos que poner todos los elementos-->
+    <nada>
+        <marcador>el marcador</marcador>
+        <veces>1</veces>
+        <tiempo_seg>1.6</tiempo_seg>
+        <tiempo_seg>1.6</tiempo_seg>
+        <tiempo_seg>1.6</tiempo_seg>
+    </nada>
+    <nada>
+        <marcador>el marcador</marcador>
+        <veces>1</veces>
+        <tiempo_seg>1.6</tiempo_seg>
+        <tiempo_seg>1.6</tiempo_seg>
+        <tiempo_seg>1.6</tiempo_seg>
+    </nada>
+    <!--choice: solo nos permite elegir un elemento-->
+    <nada2>
+        <tiempo_seg>1.6</tiempo_seg>
+    </nada2>
+    <!--all: pueden ir en cualquier orden, pero sin maxOccurs o minOccurs-->
+    <nada3>
+        <tiempo_seg>1.6</tiempo_seg>
+        <marcador>el marcador</marcador>
+        <veces>1</veces>
+    </nada3>
+</marcadores>

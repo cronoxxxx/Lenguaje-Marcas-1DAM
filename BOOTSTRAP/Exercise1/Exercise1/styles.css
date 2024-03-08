@@ -1,0 +1,92 @@
+body {
+    background-color:antiquewhite;
+}
+
+
+
+* {
+    color: black;
+}
+h3::first-letter {
+    font-size: 135%;
+}
+
+
+
+#tittle {
+    background-color: aquamarine;
+    font-family: "Audiowide";
+    font-size:150%;
+    text-align: center;
+}
+
+#fh1 {
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+
+#ul1 {
+    background-color: rgb(132, 187, 235);
+    margin-right: 90%;
+}
+
+
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(163, 16, 221);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(0, 38, 255);
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: rgb(255, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+
+h3 {
+    font-family: "Arial";
+}
+.h3 {
+    font-size: 175%;
+}
+#h3 {
+    text-align: center;
+}
+
+
+
+img {
+    width: 100px;
+    height: 100px;
+}
+nav {
+    font-family: "Sofia";
+}
+
+
+
+table {
+    border: 1px solid rgb(55, 0, 255);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+th, td {
+    border: 1px solid rgb(255, 51, 0);
+    border-radius: 10px;
+}

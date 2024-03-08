@@ -1,0 +1,51 @@
+{
+    "bib": [
+      {
+        "book": [
+            {"year":"1994",
+            "title": "TCP/IP Illustrated",
+            "author" : [
+                {
+                    "last":"Stevens",
+                    "first":"W."
+                }
+            ],
+            "publisher": "Addison-Wesley",
+            "price":"65.95"
+            },
+
+            {"year":"1992",
+            "title": "Advanced Programming in the Unix environment",
+            "author" : [
+                {
+                    "last":"Stevens",
+                    "first":"W."
+                }
+            ],
+            "publisher": "Addison-Wesley",
+            "price":"65.95"
+            },
+
+            {"year":"2000",
+            "title": "Data on the Web",
+            "author" : [
+                {
+                    "last":"Abiteboul",
+                    "first":"Serge"
+                },
+                {
+                    "last":"Abiteboul",
+                    "first":"Serge"
+                }
+                {
+                    "last":"Abiteboul",
+                    "first":"Serge"
+                }
+            ],
+            "publisher": "Addison-Wesley",
+            "price":"65.95"
+            }
+        ]
+      }
+    ]
+  }

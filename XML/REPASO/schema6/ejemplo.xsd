@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="platos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="plato" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="nombre"/> <!--Referencia si hay un atributo llamado nombre-->
+                            
+                            <xs:group ref="receta"/>
+                        </xs:sequence>
+                        <xs:attributeGroup ref="caracteristicas"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+
+
+<xs:element name="nombre" type="xs:string"/> <!--Esto referencia a nombre-->
+<xs:group name="receta">
+    <xs:sequence>
+        <xs:element name="tiempo_coccion" type="xs:string"/>
+        <xs:element name="sal" type="xs:string"/>
+        <xs:element name="especia" maxOccurs="unbounded">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Cúrcuma"/>
+                <xs:enumeration value="Tomillo"/>
+                <xs:enumeration value="Pimienta negra"/>
+            </xs:restriction>
+        </xs:simpleType>    
+        </xs:element>
+    </xs:sequence>
+</xs:group>
+<!--Grupo de atributos-->
+<xs:attributeGroup name="caracteristicas">
+    <xs:attribute name="color" type="xs:string"/>
+    <xs:attribute name="sabor" type="xs:string"/>
+    <xs:attribute name="tipo" type="xs:string"/>
+</xs:attributeGroup>
+</xs:schema>

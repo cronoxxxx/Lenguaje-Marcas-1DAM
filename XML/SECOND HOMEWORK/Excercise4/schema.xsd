@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="books">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="book" type="book" minOccurs="1" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+
+    </xs:element>
+
+    <!--REFERENCES-->
+
+    <xs:complexType name="book" mixed="false">
+        <xs:sequence>
+            <xs:element name="title" type="title" maxOccurs="unbounded" />
+            <xs:element name="edition" type="xs:byte" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="author" type="author" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="publishedDate" type="publishedDate" maxOccurs="unbounded" />
+            <xs:element name="type" type="type" maxOccurs="unbounded" />
+            <xs:element name="price" type="price" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="isbn" type="xs:string" default="" />
+    </xs:complexType>
+
+    <!--Title
+    attribute-->
+    <xs:complexType name="title" mixed="true">
+        <xs:attribute name="type">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="P"></xs:enumeration>
+                    <xs:enumeration value="H"></xs:enumeration>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+    <!--complex
+    author-->
+    <xs:complexType name="author" mixed="false">
+        <xs:sequence>
+            <xs:element name="first" type="xs:string" />
+            <xs:element name="middle" minOccurs="1" maxOccurs="unbounded">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="1"></xs:maxLength>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="last" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+    <!--complex
+    published date-->
+    <xs:complexType name="publishedDate" mixed="true">
+        <xs:all>
+            <xs:element name="month">
+                <xs:simpleType>
+                    <xs:restriction base="xs:unsignedByte">
+                        <xs:minInclusive value="1" />
+                        <xs:maxInclusive value="12" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="day">
+                <xs:simpleType>
+                    <xs:restriction base="xs:unsignedByte">
+                        <xs:minInclusive value="1" />
+                        <xs:maxInclusive value="31" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="year" type="xs:gYear" />
+        </xs:all>
+    </xs:complexType>
+
+    <xs:simpleType name="type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="fiction"></xs:enumeration>
+            <xs:enumeration value="nonfiction"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="price">
+        <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="5" />
+            <xs:fractionDigits value="2" />
+            <xs:minExclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="schema.xsd">
+ <book id="dx" available="true">
+    <isbn>1</isbn>
+    <title lang="EN">MJ</title>
+    <author id="dd">
+        <name></name>
+        <born>2004-12-23</born>
+        <dead>2005-12-23</dead>
+    </author>
+    <character id="xd">
+        <name></name>
+        <born>2222-12-23</born>
+        <qualification></qualification>
+    </character>
+
+ </book>
+
+</library>

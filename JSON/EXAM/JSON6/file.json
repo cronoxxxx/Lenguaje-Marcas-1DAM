@@ -1,0 +1,28 @@
+{
+    "catalog": [
+      {
+        "article": [
+          {"item": "Socks", "details": "LEOTARDS", "price": 1, "order": "C", "reference": "C10"},
+          {"item": "Socks", "details": "LEOTARDS", "price": 1, "order": "C", "reference": "C10"}
+        ]
+      },
+      {
+        "article": [
+          {"item": "Sweater", "details": "MULTICOLORED SWEATER", "price": 10, "order": "J", "reference": "J66"},
+          {"item": "Sweater", "details": "WOOL SWEATER", "price": 15, "order": "J", "reference": "J14"}
+        ]
+      },
+      {
+        "article": [
+          {"item": "T-shirt", "details": "NYLON T-SHIRT PACK", "price": 1, "order": "R", "reference": "M43"},
+          {"item": "T-shirt", "details": "COTTON T-SHIRT PACK", "price": 2, "order": "R", "reference": "M36"}
+        ]
+      },
+      {
+        "article": [
+          {"item": "Accessories", "details": "EARMUFFS", "price": 3, "order": "M", "reference": "S12"},
+          {"item": "Accessories", "details": "THREADS CAP", "price": 3, "order": "M", "reference": "S13"}
+        ]
+      }
+    ]
+  }

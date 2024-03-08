@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transportes xsi:noNamespaceSchemaLocation="ejemplo.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<aereos>
+    <avion>vuela lejos</avion>
+</aereos>
+<aereos>
+    <helicoptero>vuela lejos menos</helicoptero>
+</aereos>
+<terrestres>
+    <moto>run run</moto>
+</terrestres>
+<numeros>2</numeros>
+</transportes>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="xpath.xsl" type="text/xsl"?>
+<canasta>
+    <producto IDProducto = "057">
+        <nombre>Manzana</nombre>
+        <origen>Mexico</origen>
+        <cantidad>20</cantidad>
+        <costo>14.5</costo>
+    </producto>
+    <producto IDProducto = "230">
+        <nombre>Pera</nombre>
+        <origen>Argentina</origen>
+        <cantidad>32</cantidad>
+        <costo>12.8</costo>
+    </producto>
+    <producto IDProducto = "218">
+        <nombre>Mango</nombre>
+        <origen>Colombia</origen>
+        <cantidad>10</cantidad>
+        <costo>18.5</costo>
+    </producto>
+    <producto IDProducto = "315">
+        <nombre>Pasta</nombre>
+        <origen>Italia</origen>
+        <cantidad>23</cantidad>
+        <costo>04.57</costo>
+    </producto>
+</canasta>

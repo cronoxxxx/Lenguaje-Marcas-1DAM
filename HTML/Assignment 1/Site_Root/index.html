@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1>HTML excercises</h1>
+    <table border>
+        <tr>
+            <th colspan="4">LIBRARY</th>
+        </tr>
+        <tr>
+            <th colspan="3">CATALOG</th>
+            <th>APPLICATION FORM</th>
+        </tr>
+        <tr>
+            <td rowspan="2">BOOKS</td>
+            <td>
+                <p>Novels:</p>
+                <ul>
+                    <li>Science-fiction</li>
+                    <li>Fantasy</li>
+                </ul>
+            </td>
+            <td rowspan= "2"><a title="books" href="html/libros.html"><img src="Images/libros.gif" alt="books"></a></td>
+            <td rowspan="4" style="vertical-align: top; height: 150px;width: 150px;">
+                <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                    <fieldset><legend>Credentials:</legend>
+                        <label for="user">User:</label>
+                        <input type="text" id="user" name="user" pattern="[0-9] {2} [A-Z] {2}">
+                        <br><br>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password">
+                    </fieldset>
+                </form>
+                <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                    <fieldset><legend>Personal information:</legend>
+                        <label for="user">Name:</label>
+                        <input type="text" id="name" name="name" maxlength="30" placeholder="John Smith"><br><br>
+                        <label for="masculino"><input type="radio" id="masculino" name="genero" value="masculino"> Male</label><br>
+                        <label for="femenino"><input type="radio" id="femenino" name="genero" value="femenino"> Female</label><br>
+                        <label for="other"><input type="radio" id="other" name="genero" value="other"> Other</label> 
+                        <br><br>
+                        <label for="user">E-mail:</label><br>
+                        <input type="text" id="email" name="email" placeholder="Doe@gmail.com"><br><br>
+                        <label>Nationality:</label><br>
+                        <select name="nationality">
+                        <option value="spanish">Spanish</option>
+                        <option value="italian">Italian</option>
+                        <option value="american">American</option>
+                        </select><br><br>
+                        <input id="checkbox" type="checkbox">
+                        <label for="checkbox">Agree to <a href="https://www.nibusinessinfo.co.uk/content/sample-website-terms-and-conditions-use">Terms and Conditions</a></label><br><br>
+                        <label>Comments:</label><br>
+                        <textarea rows="8" cols="25"></textarea><br>
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Clear">
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Tales:</p>
+                <ul>
+                    <li>Fables</li>
+                    <li>Fairy tales</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">FILMS</td>
+            <td>
+                <p>Thrillers:</p>
+                <ul>
+                    <li>Psychological Thriller</li>
+                    <li>Crime Thriller</li>
+                </ul>
+            </td>
+            <td rowspan= "2"><a><img src="Images/Pelicula.jpg" alt="pelicula" style="height: 300px;width: 300px;"></a></td>
+        </tr>
+        <tr>
+            <td>
+                <p>Others:</p>
+                <ul>
+                    <li>Western
+                        <ol>
+                            <li>American western</li>
+                            <li>European western</li>
+                        </ol>
+                    </li>
+                    <li>Comedy</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

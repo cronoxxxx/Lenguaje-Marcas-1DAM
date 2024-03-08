@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<platos xsi:noNamespaceSchemaLocation="ejemplo.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <plato color="blanco" sabor="dulce" tipo="tapa">
+        <nombre>Cocodrillo a la brasa</nombre>
+        <tiempo_coccion>6h</tiempo_coccion>
+        <sal>1kg</sal>
+        <especia>Cúrcuma</especia>
+        <especia>Tomillo</especia>
+        <especia>Pimienta negra</especia>
+    </plato>
+</platos>

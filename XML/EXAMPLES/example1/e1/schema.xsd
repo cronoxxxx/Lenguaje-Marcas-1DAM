@@ -1,0 +1,22 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="sports">
+    <xs:complexType>
+        <xs:choice>
+            <xs:element name="sport" >
+                <xs:complexType mixed="true">
+                    <xs:attribute name="code">
+                        <xs:simpleType >
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="FB"></xs:enumeration>
+                                <xs:enumeration value="BB"></xs:enumeration>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+
+</xs:element>
+</xs:schema>

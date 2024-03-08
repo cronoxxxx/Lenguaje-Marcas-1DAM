@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books xsi:noNamespaceSchemaLocation="schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <book id="123">
+        <author>Adrian</author>
+        <title>Vita Carnis</title>
+        <genre>Analog Terror</genre>
+        <price>1.5</price>
+        <pub_date>2024-01-21</pub_date>
+        <review>Good book 10/10</review>
+    </book>
+</books>

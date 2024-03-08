@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="restricciones">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="restriccion">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="9" /> <!--minLength
+                            y maxLength-->
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="restriccion2">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="coche" />
+                            <xs:enumeration value="avion" /> <!--solo
+                            valores de coche y avion-->
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="restriccion3">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:maxExclusive value="20" /> <!--Solo
+                            admite valores de 0 a 20-->
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

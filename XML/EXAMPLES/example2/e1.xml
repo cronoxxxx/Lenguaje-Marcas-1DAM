@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Song xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="schema.xsd" lang="EN" prod="XML">
+    <Id>123</Id>
+    <Title>Titanium</Title>
+    <Published>true</Published>
+    <DatePub>2012-10-09</DatePub>
+    <Artist>David Guetta</Artist>
+    <Company>ACME</Company>
+    <Password>David_xd</Password>
+    <Salary>12345.65</Salary>
+    <JobTitle>Disc Jockey</JobTitle>
+</Song>

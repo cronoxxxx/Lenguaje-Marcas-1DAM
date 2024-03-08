@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE groceries [
+    <!ELEMENT groceries (item*)>
+    <!ELEMENT item (name, price, quantity, aisle)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT quantity (#PCDATA)>
+    <!ELEMENT aisle (#PCDATA)>
+]>
+
+<groceries>
+    <item>
+        <name>Milk</name>
+        <price>$3.00</price>
+        <quantity>1</quantity>
+        <aisle>A3</aisle>
+    </item>
+    <item>
+        <name>Whole Wheat Bread</name>
+        <price>$2.85</price>
+        <quantity>1</quantity>
+        <aisle>A5</aisle>
+    </item>
+    <item>
+        <name>Carrots</name>
+        <price>$2.00</price>
+        <quantity>2</quantity>
+        <aisle>C2</aisle>
+    </item>
+    <item>
+        <name>Apples</name>
+        <price>$3.00</price>
+        <quantity>4</quantity>
+        <aisle>C2</aisle>
+    </item>
+</groceries>

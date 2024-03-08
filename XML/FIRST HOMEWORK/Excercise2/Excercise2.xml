@@ -1,0 +1,40 @@
+<!DOCTYPE studentInformation [
+    <!ELEMENT studentInformation (student*)>
+    <!ELEMENT student (name, address, dateOfBirth, subjects)>
+    <!ATTLIST student
+        id CDATA #REQUIRED
+    >
+    <!ELEMENT name (first, last)>
+    <!ELEMENT first (#PCDATA)>
+    <!ELEMENT last (#PCDATA)>
+    <!ELEMENT address (street, city, province, district)>
+    <!ELEMENT street (#PCDATA)>
+    <!ELEMENT city (#PCDATA)>
+    <!ELEMENT province (#PCDATA)>
+    <!ELEMENT district (#PCDATA)>
+    <!ELEMENT dateOfBirth (#PCDATA)>
+    <!ELEMENT subjects (subject*)>
+    <!ELEMENT subject (#PCDATA)>
+]>
+
+<studentInformation>
+    <student id="123456">
+        <name>
+            <first>Adrian</first>
+            <last>Saavedra</last>
+        </name>
+        <address>
+            <street>123 Street</street>
+            <city>Madrid</city>
+            <province>Madrid</province>
+            <district>12345</district>
+        </address>
+        <dateOfBirth>20-09-2004</dateOfBirth>
+        <subjects>
+            <subject>Computer Science</subject>
+            <subject>Law</subject>
+            <subject>Chemistry</subject>
+            <subject>Sociology</subject>
+        </subjects>
+    </student>
+</studentInformation>

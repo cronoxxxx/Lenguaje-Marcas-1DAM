@@ -1,0 +1,427 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#title{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: 60px;
+    text-align: center;
+    /*padding-bottom: 15px;
+    padding-top: 15px;*/
+    font-family: 'Bakbak One';
+    font-size:60px
+}
+h1 a{
+    color: black; /* Cambia el color a negro */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+#search{
+    float: left;
+    
+    top: 15px;
+    padding-left: 0cm;
+    margin-right: 10px;
+    padding-left: 10px;
+    
+}
+
+#mail{
+    float: right;
+    top: 35px;
+    padding-left: 0px;
+    margin-top: -88px;
+    margin-right: 5px;
+    padding-right:166px;
+    
+}   
+
+#suscribe{
+    float: right;
+    
+    right: 0cm;
+    padding-left: 10px;
+    border-left: 1px solid rgba(166, 157, 157, 0.566);
+    margin-right: 10px;
+    margin-top: -85px;
+    margin-right: 15px;
+   padding-bottom: 5px;
+   padding-top: 5px;
+   padding-right: 72px;
+   font-size: small;
+   font-family: 'Montserrat'
+}
+
+#suscribe a{
+    text-decoration: none; /* Elimina el subrayado */
+    color: red;
+}
+
+#login a{
+    color: black;
+    text-decoration: none;
+}
+#login{
+    float: right;
+    
+    top: 0;
+    right: 0cm;
+    padding-left: 10px;
+    border-left: 1px solid rgba(166, 157, 157, 0.566);
+    top: 35px;
+    margin-top: -80px;
+    margin-right: 25px;
+    padding-left: 10px;
+    font-size: small;
+    font-family: 'Montserrat'
+    
+}
+
+
+
+
+.nav{
+    
+    float:left;
+    padding-bottom: 35px;
+    border-image: linear-gradient(#c1bfbd, #f3f5f1) 30;
+    border-width: 5px;
+    border-style: none none solid;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat'
+}
+
+.nice{
+    margin-left: 50px;
+    color: black; /* Cambia el color a negro */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.nice:link{
+    color: black;
+}
+
+.nice:visited{
+    color: rgb(94, 118, 195);
+}
+
+.nice:hover{
+    color: green;
+}
+
+.nice:active{
+    color: red;
+}
+.title1 {
+    
+    margin-top: 10px ;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: small;
+    max-width: 600px;
+    position: relative;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30%;
+    padding-top: 80px
+}
+
+
+
+.title1:before {
+    content: "";
+    display: block;
+    width: 638px;
+    height: 2px;
+    background-color: rgb(216, 216, 216);
+    position: absolute;
+    left: -75%;
+    top: 90%;
+    z-index: -2;
+}
+
+.title1:after {
+    content: "";
+    display: block;
+    width: 650px;
+    background-color: rgb(216, 216, 216);
+    position: absolute;
+    right: -77%;
+    height: 2px;
+    top: 90%;
+    z-index: -2;
+}
+
+.title1 span {
+    background-color: #ff0000; /* Fondo solo para el texto */
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    display: inline; /* Añade display: inline para que el fondo no reemplace ::before o ::after */
+}
+
+.title1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.fieldset1 {
+    border-style: none;
+    width: 400px; /* Establece el ancho deseado y resta el margen */
+    float: left; /* Hace que los fieldsets se coloquen uno al lado del otro */
+    margin-right: 50px; /* Agrega un margen derecho para separarlos */
+    margin-left: 45px;
+    
+
+}
+
+
+.fieldset2 {
+    border-style: none;
+    width: 400px; /* Establece el ancho deseado y resta el margen */
+    padding-right: 50px;
+    float: left; /* Hace que los fieldsets se coloquen uno al lado del otro */
+     /* Agrega un margen derecho para separarlos */
+    padding-left: 55px;
+    border-left: 3px solid rgba(166, 157, 157, 0.566);
+    padding-bottom: 19px;
+    
+}
+
+.fieldset3 {
+    border-style: none;
+    width: 400px; /* Establece el ancho deseado y resta el margen */
+    
+    float: left; /* Hace que los fieldsets se coloquen uno al lado del otro */
+    padding-bottom: 1px;
+    border-left: 3px solid rgba(166, 157, 157, 0.566);
+    padding-left: 45px;
+}
+
+
+
+.candado{
+    width: 20px;
+    margin-bottom: -11px;
+}
+
+.Digiday{
+    color: black; /* Cambia el color a negro */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:bolder
+    
+}
+
+.member{
+    color: #ff0000;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+
+}
+
+.Date{
+    color: #777472;
+}
+
+
+#access {
+    
+    margin-top: 140px ;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(118, 117, 117);
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 600px;
+    margin-bottom: 25px;
+    margin-left: 30%;
+    padding-top: 80px
+}
+
+
+
+#access:before {
+    content: "";
+    display: block;
+    width: 535px;
+    height: 2px;
+    background-color: rgb(216, 216, 216);
+    position: absolute;
+    left: -77%;
+    top: 90%;
+    z-index: -2;
+}
+    
+
+#access::after {
+    content: "";
+    display: block;
+    width: 545px;
+    background-color: rgb(216, 216, 216);
+    position: absolute;
+    right: -79%;
+    height: 2px;
+    top: 90%;
+    z-index: -2;
+    
+}
+
+#access span {
+    color: #ff0000;
+    display: inline;
+    font-style: italic;
+}
+
+#pacman{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 1000px;
+    border-right: 3px solid rgba(166, 157, 157, 0.566);
+    padding-right:50px;
+    padding-bottom: 55px;
+}
+
+#belowtext{
+    text-align: center;
+    margin-right: 450px;
+    margin-top: -48px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #777472;
+    font-size: 17px;
+}
+
+
+
+#last{
+    margin-top: -60px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+#aside{
+    
+    float: right;
+    margin-top: -570px;
+    width: 450px;
+    padding-right:0px;
+    
+    padding-left: 0px;
+}
+
+.aside1{
+    margin-top: -2px;
+    padding-bottom:10px ;
+    border-style: none
+    
+}
+
+.grayaside{
+    color: gray;
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blueaside{
+    color: rgb(108, 108, 232);
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.linkaside {
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    
+}
+
+.linkaside1{
+    border-bottom: 3px solid rgba(166, 157, 157, 0.566);
+    padding-bottom: 25px;
+}
+
+.linkaside2{
+
+    border-bottom: 3px solid rgba(166, 157, 157, 0.566);
+    padding-bottom: 35px;
+}
+
+.linkaside3{
+    border-bottom: 3px solid rgba(166, 157, 157, 0.566);
+    padding-bottom: 35px;
+}
+
+.linkaside1, .linkaside2, .linkaside3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+}
+
+div .undertext{
+    color: black; /* Cambia el color a negro */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+div .undertext2{
+    color: black; /* Cambia el color a negro */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+div .undertext3{
+    color: black; /* Cambia el color a negro */
+    text-decoration: none; /* Elimina el subrayado */
+}
+.undertext{
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 40px;
+    
+}
+
+.undertext2{
+    margin-top: 20px;
+    float: left;
+    padding-left: 190px;
+    margin-left: 280px;
+    font-size: 20px;
+    
+}
+
+.undertext3{
+    margin-top: 25px;
+    float: left;
+    padding-left: 50px;
+    font-size: 12px;
+   
+}
+
+.undertext, .undertext2, .undertext3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+footer{
+    margin-right: 10px;
+    margin-left: 10px;
+    border-top: 3px solid rgba(1, 1, 1, 0.566);
+    background-color: white;
+    margin-top: 25px
+    
+}
+
+#bold{
+    font-weight: 900;
+}

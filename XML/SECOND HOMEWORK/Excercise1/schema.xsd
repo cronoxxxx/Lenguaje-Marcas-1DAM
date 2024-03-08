@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Customer">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="IDCust"/>
+            <xs:element ref="NameCust"/>
+            <xs:element ref="Street"/>
+            <xs:element ref="NumStreet"/>
+            <xs:element ref="PostalCode"/>
+            <xs:element ref="City"/>
+            <xs:element ref="Phone"/>
+            <xs:element ref="DateOfBirth"/>
+            <xs:element ref="Discount"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:element>
+<!--REFERENCES-->
+<xs:element name="IDCust">
+    <xs:simpleType>
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-9]{5}"/> <!--5 digits-->
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<xs:element name="NameCust">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="2"/> <!--From 2 to 8-->
+            <xs:maxLength value="8"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<xs:element name="Street">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="30"/> <!--Maximum 30 chars-->
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<xs:element name="NumStreet">
+    <xs:simpleType>
+        <xs:restriction base="xs:integer">
+            <xs:maxExclusive value="5000"/> <!--From 0 to 5000, 5001+ not allowed-->
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<xs:element name="PostalCode">
+    <xs:simpleType>
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="\d{5}"/> <!--5 digits-->
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<xs:element name="City">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Madrid"/> 
+            <xs:enumeration value="Sevilla"/>
+            <xs:enumeration value="Barcelona"/> <!--Only Madrid, Barcelona and Sevilla values are allowed-->
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<xs:element name="Phone">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{3}-\d{3}-\d{3}"/> <!--ddd - ddd - ddd-->
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<xs:element name="DateOfBirth" type="xs:date"/> <!--date format-->
+<xs:element name="Discount" type="xs:boolean"/> <!--true or false-->
+</xs:schema>

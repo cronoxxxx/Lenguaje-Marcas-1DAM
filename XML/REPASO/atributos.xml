@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE planeta [
+<!ELEMENT planeta (nombre_planeta, continentes*)>
+<!ELEMENT nombre_planeta (#PCDATA)>
+<!ELEMENT continentes (continente*)>
+<!ELEMENT continente (nombre, tamaño, num_habitantes, lengua_mayoritaria, partes)>
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST nombre hemisferio (N|S) #REQUIRED>
+<!ATTLIST nombre mote ID #REQUIRED> <!--En required tenemos que colocarlo si o si-->
+<!ELEMENT tamaño EMPTY>
+<!ELEMENT num_habitantes ANY>
+<!ATTLIST num_habitantes fuente CDATA #FIXED "segura">
+ <!--con fixed puedes eliminar el atributo cuando queramos, aparecera con el valor predeterminado "segura", pero solo con este atributo, ninguno mas-->
+<!ATTLIST num_habitantes cantidad CDATA "muchos"> <!--Este tambien, pero su valor no es fijo, lo podemos cambiar, y si no lo colocamos, aparecera con el valor de "muchos"-->
+<!ELEMENT lengua_mayoritaria (#PCDATA)>
+<!ELEMENT partes ANY>
+<!ATTLIST partes tiene_islas CDATA #IMPLIED> <!--opcional, podemos agregar atributo o no, pero en el documento xml aparecera sin atributo-->
+]>
+
+<planeta>
+ <nombre_planeta>TIERRA</nombre_planeta>
+ <continentes>
+  <continente>
+    <nombre hemisferio="S" mote="AFR">AFRICA</nombre>
+    <tamaño/>
+    <num_habitantes fuente="segura" cantidad="pocos">500000</num_habitantes>
+    <lengua_mayoritaria>Francés</lengua_mayoritaria>
+    <partes tiene_islas="si">3</partes>
+  </continente>
+  <continente>
+    <nombre hemisferio="N" mote="AMR">AMERICA</nombre>
+    <tamaño/>
+    <num_habitantes cantidad="medio">234234</num_habitantes>
+    <lengua_mayoritaria>Español</lengua_mayoritaria>
+    <partes>3</partes>
+  </continente>
+ </continentes>
+</planeta>

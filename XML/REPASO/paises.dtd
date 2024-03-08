@@ -1,0 +1,6 @@
+  <!ELEMENT paises (pais*)>
+  <!ELEMENT pais (nombre*,continente,numero_hab,gobierno)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT continente ANY>
+  <!ELEMENT numero_hab (#PCDATA)>
+  <!ELEMENT gobierno EMPTY>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equipos_esp xsi:noNamespaceSchemaLocation="ejemplo.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<equipo pais="España">
+    el mejor equipo del mundo
+    <nombre sigla="FCB">Futbol club barcelona</nombre>
+    <valoracion>100000.0</valoracion>
+    <champion>true</champion>
+    <deporte>Futbol</deporte>
+<deporte>Baloncesto</deporte>
+    <deporte>Futbol sala</deporte>
+</equipo>
+<equipo pais="España">
+    xd
+    <nombre sigla="RMA">Real Madrid CF</nombre>
+    <valoracion>10.0</valoracion>
+    <champion>true</champion>
+    <deporte>Futbol</deporte>
+<deporte>Baloncesto</deporte> 
+</equipo>
+<observacion>Son equipos de deporte de españa</observacion>
+<division>1</division>
+</equipos_esp>

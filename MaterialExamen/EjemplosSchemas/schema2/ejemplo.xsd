@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="marcadores">
+    <xs:complexType >
+        <xs:sequence>
+
+            <xs:element name="nada" maxOccurs="2">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="marcador"  type="xs:string"/> <!--Igual que no ponerlo-->
+                        <xs:element name="veces"  type="xs:string"/> <!--No podemos poner solo un valor minOccurs mayor que uno-->
+                        <xs:element name="tiempo_seg"  maxOccurs="3" type="xs:double"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="nada2" maxOccurs="2">
+                <xs:complexType>
+                    <xs:choice>
+                        <xs:element name="marcador"  type="xs:string"/> <!--Igual que no ponerlo-->
+                        <xs:element name="veces"  type="xs:string"/> <!--No podemos poner solo un valor minOccurs mayor que uno-->
+                        <xs:element name="tiempo_seg"  maxOccurs="3" type="xs:double"/>
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="nada3" maxOccurs="2">
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="marcador"  type="xs:string"/> <!--Igual que no ponerlo-->
+                        <xs:element name="veces"  type="xs:string"/> <!--No podemos poner solo un valor minOccurs mayor que uno-->
+                        <xs:element name="tiempo_seg" type="xs:double"/>
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="equipos_esp">
+    <xs:complexType mixed="false"> <!--mixed: lleva enunciados dentro-->
+        <xs:sequence>
+            <xs:element name="equipo" maxOccurs="unbounded"> 
+                <xs:complexType mixed="true">
+                <xs:sequence>
+                    <xs:element name="nombre">
+                        <xs:complexType mixed="true">
+                            <xs:attribute name="sigla" type="xs:string" default=""/>
+                            <!--elemento lleva contenido-->
+                        </xs:complexType>  
+                    </xs:element>
+                    <xs:element name="valoracion" type="xs:double"/>
+                    <xs:element name="champion" type="xs:boolean"/>
+                    <xs:element name="deporte" maxOccurs="unbounded"/>
+                </xs:sequence>
+                <xs:attribute name="pais" type="xs:string" fixed="España"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="observacion" type="xs:string"/>
+            <xs:element name="division" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

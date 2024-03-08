@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="catalog">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="article" type="article" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="article">
+        <xs:sequence>
+            <xs:element name="item" type="item" maxOccurs="unbounded" />
+            <xs:element name="details" type="details" maxOccurs="unbounded"></xs:element>
+            <xs:element name="price" type="xs:int" maxOccurs="unbounded"></xs:element>
+            <xs:element name="order" type="order" maxOccurs="unbounded"></xs:element>
+            <xs:element name="reference" type="reference" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="item">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Socks"></xs:enumeration>
+            <xs:enumeration value="Sweater"></xs:enumeration>
+            <xs:enumeration value="T-shirt"></xs:enumeration>
+            <xs:enumeration value="Accessories"></xs:enumeration>
+        </xs:restriction> 
+    </xs:simpleType>
+
+    <xs:simpleType name="details">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="100" /> <!--not more then 100 characters-->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="order">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]*" /> <!--one only field value-->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="reference">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[SCJM]\d{2}"></xs:pattern> <!--uppercase and two dights-->
+        </xs:restriction>
+    </xs:simpleType>
+
+
+</xs:schema>

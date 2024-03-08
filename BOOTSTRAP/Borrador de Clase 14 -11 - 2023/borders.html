@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+</head>
+<body>
+  <div class="container-md mt-3 ">
+    <form>
+      <h1>Form</h1>
+      <div class="row">
+        <div class="col-lg-6 ">
+          <label>Name:</label>
+          <input type="text" class="form-control" placeholder="Enter email" name="email">
+        </div>
+        <div class="col-lg-6">
+          <label>Last Name:</label>
+          <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-4">
+          <label for="Gender" >Gender</label><br>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" >
+          <label class="form-check-label" for="radio1">Male</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+          <label class="form-check-label" for="radio2">Female</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="optradio" value="option3">
+          <label class="form-check-label">Other</label>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <form action="/action_page.php">
+          <label for="sel1" class="form-label">City</label>
+          <select class="form-select" id="sel1" name="sellist1" placeholder="Select an option">
+            <option>Select</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+          <div class="mt-5">
+            <button type="submit" class="btn btn-secondary offset-6">Reset</button>
+          </div>
+      </div>
+      <div class="col-lg-4 ">
+        <form action="/action_page.php">
+          <label>Please confirm:</label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+            <label class="form-check-label" for="check1">I accept the terms and conditions</label>
+          </div>
+      </div>
+      </div>
+    </form>
+  </div>
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

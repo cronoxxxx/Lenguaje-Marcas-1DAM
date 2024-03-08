@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="xpath.xsl" type="text/xsl"?>
+<catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="schemas.xsd">
+    <article>
+        <item>Socks</item>
+        <details>LEOTARDS</details>
+        <price>1</price>
+        <order>C</order>
+        <reference>C10</reference>
+    </article>
+
+    <article>
+        <item>Socks</item>
+        <details>WOOL SOCKS</details>
+        <price>2</price>
+        <order>C</order>
+        <reference>C37</reference>
+    </article>
+    
+    <article>
+        <item>Socks</item>
+        <details>SOCK-PACK</details>
+        <price>1</price>
+        <order>C</order>
+        <reference>C25</reference>
+    </article>
+
+    <article>
+        <item>Socks</item>
+        <details>SHORT SPORTS SOCKS</details>
+        <price>1</price>
+        <order>C</order>
+        <reference>C27</reference>
+    </article>
+
+    <article>
+        <item>Socks</item>
+        <details>LONG SPORTS SOCKS</details>
+        <price>8</price>
+        <order>C</order>
+        <reference>C29</reference>
+    </article>
+
+    <article>
+        <item>Socks</item>
+        <details>STOCKINGS PACK</details>
+        <price>4</price>
+        <order>C</order>
+        <reference>C45</reference>
+    </article>
+
+    <article>
+        <item>Socks</item>
+        <details>THREAD SOCKS</details>
+        <price>15</price>
+        <order>C</order>
+        <reference>C06</reference>
+    </article>
+
+    <article>
+        <item>Socks</item>
+        <details>NYLON SOCKS</details>
+        <price>2</price>
+        <order>C</order>
+        <reference>C22</reference>
+    </article>
+
+    <article>
+        <item>Sweater</item>
+        <details>MULTICOLORED SWEATER</details>
+        <price>10</price>
+        <order>J</order>
+        <reference>J66</reference>
+    </article>
+
+    <article>
+        <item>Sweater</item>
+        <details>WOOL SWEATER</details>
+        <price>15</price>
+        <order>J</order>
+        <reference>J14</reference>
+    </article>
+
+    <article>
+        <item>Sweater</item>
+        <details>THREAD SWEATER</details>
+        <price>10</price>
+        <order>J</order>
+        <reference>J15</reference>
+    </article>
+
+    <article>
+        <item>Sweater</item>
+        <details>COTTON SWEATER</details>
+        <price>5</price>
+        <order>J</order>
+        <reference>J33</reference>
+    </article>
+
+    <article>
+        <item>T-shirt</item>
+        <details>COTTON T-SHIRT PACK</details>
+        <price>2</price>
+        <order>R</order>
+        <reference>M38</reference>
+    </article>
+
+    <article>
+        <item>T-shirt</item>
+        <details>NYLON T-SHIRT PACK</details>
+        <price>1</price>
+        <order>R</order>
+        <reference>M43</reference>
+    </article>
+
+    <article>
+        <item>T-shirt</item>
+        <details>NYLON T-SHIRT</details>
+        <price>2</price>
+        <order>R</order>
+        <reference>M36</reference>
+    </article>
+
+    <article>
+        <item>T-shirt</item>
+        <details>COTTON T-SHIRT</details>
+        <price>5</price>
+        <order>R</order>
+        <reference>M18</reference>
+    </article>
+
+    <article>
+        <item>Accessories</item>
+        <details>WOOL SCARF</details>
+        <price>20</price>
+        <order>M</order>
+        <reference>S08</reference>
+    </article>
+
+    <article>
+        <item>Accessories</item>
+        <details>NYLON CAP</details>
+        <price>4</price>
+        <order>M</order>
+        <reference>S35</reference>
+    </article>
+
+    <article>
+        <item>Accessories</item>
+        <details>NYLON TAPE</details>
+        <price>2</price>
+        <order>C</order>
+        <reference>S09</reference>
+    </article>
+
+    <article>
+        <item>Accessories</item>
+        <details>LUXURY SILK GLOVES</details>
+        <price>3</price>
+        <order>M</order>
+        <reference>S80</reference>
+    </article>
+
+    <article>
+        <item>Accessories</item>
+        <details>SCARF PACK</details>
+        <price>1</price>
+        <order>M</order>
+        <reference>S17</reference>
+    </article>
+
+    <article>
+        <item>Accessories</item>
+        <details>WOOL CAP</details>
+        <price>1</price>
+        <order>M</order>
+        <reference>S11</reference>
+    </article>
+
+    <article>
+        <item>Accessories</item>
+        <details>THREAD CAP</details>
+        <price>3</price>
+        <order>M</order>
+        <reference>S12</reference>
+    </article>
+
+    <article>
+        <item>Accessories</item>
+        <details>EARMUFFS</details>
+        <price>3</price>
+        <order>M</order>
+        <reference>S13</reference>
+    </article>
+</catalog>

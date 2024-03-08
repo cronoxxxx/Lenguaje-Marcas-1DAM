@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="items">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="shirt" type="shirt" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element name="hat" type="hat" minOccurs="0" maxOccurs="unbounded" />
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="shirt">
+        <xs:sequence>
+            <xs:element name="number" maxOccurs="1" />
+            <xs:element name="name" maxOccurs="1"/>
+            <xs:element name="size" type="size" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="color" type="color" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="description" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="effDate" default="1900-01-01" type="xs:date"></xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="size">
+        <xs:simpleContent>
+            <xs:extension base="xs:integer">
+                <xs:attribute name="system" type="xs:string" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="color">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="value" default=" "/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="hat">
+        <xs:sequence>
+            <xs:element name="number" maxOccurs="1"/>
+            <xs:element name="name" maxOccurs="1"/>
+            <xs:element name="color" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="effDate" default="1900-01-01" type="xs:date"></xs:attribute>
+    </xs:complexType>
+</xs:schema>
