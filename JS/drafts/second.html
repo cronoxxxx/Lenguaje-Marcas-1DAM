@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <h2>forms</h2>
+    <label for="fname" id="lfn" >First name</label><br>
+    <input type="text" id="fname" name="fname" value="John">
+    <label for="fname" >Last name</label><br>
+    <input type="text" name="lname" id="lname" value="Doe"><br><br>
+    <button id="fbutton">Click me!</button>
+
+    <p id="message"></p>
+
+    <script>
+
+    document.addEventListener("DOMContentLoaded",assignEvents)
+
+    function assignEvents (){
+        document.getElementById('lfn').addEventListener("mouseover",showMessagelfn);
+        document.getElementById('fname').addEventListener("keyup",showMessagefname);
+        document.getElementById('fbutton').addEventListener("click",helloMessage);
+        document.getElementById('fbutton').addEventListener("click",helloMessage2);
+
+    }
+
+    const showMessagelfn = () => alert("Someone is over me");
+    const showMessagefname = ()=>alert("Something has changed!")
+    const helloMessage = ()=>{ 
+        let name = document.getElementById('fname').value, 
+        lname = document.getElementById('lname').value       //alert("Hello: "+name+" "+lname) 
+        document.getElementById('message').innerHTML = "Hello " + name + " " + lname;
+    }
+
+    const helloMessage2 = ()=>alert("Mouseover")
+
+   
+
+
+        
+
+    </script>
+</body>
+</html>

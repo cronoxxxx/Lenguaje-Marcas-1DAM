@@ -1,4 +1,3 @@
 console.log("Hola mundo");
-let penis = "Viva el porno";
-
+let penis = "Viva"
 console.log(penis);
