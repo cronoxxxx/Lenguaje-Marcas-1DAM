@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded",whole)
+
 
 function whole(){
-    document.getElementById('one').addEventListener("input",copy) //se usa el input para ingresar
+    document.getElementById('one').addEventListener("keyup",copy) //se usa el input para ingresar, change para clic
 }
 
 const copy = () => {
@@ -9,3 +9,4 @@ const copy = () => {
     document.getElementById('two').value = value //refleja el cambio al mismo tiempo
 }
 
+whole()

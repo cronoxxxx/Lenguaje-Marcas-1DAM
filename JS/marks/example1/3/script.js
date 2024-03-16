@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded",whole)
+
 
 
 function whole(){
@@ -14,3 +14,4 @@ function whole(){
 }
 
 
+whole()
