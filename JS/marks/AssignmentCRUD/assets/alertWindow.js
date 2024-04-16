@@ -21,7 +21,7 @@ function action() {
 }
 
 const showAlert= (message) =>{
-    alert(message);
+    alert(message)
 }
 
 const adderListener = () =>{
