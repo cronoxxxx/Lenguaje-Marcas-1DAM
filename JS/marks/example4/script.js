@@ -12,7 +12,7 @@ const randomGetter = (n1, n2) => {
     return storage[randomIndex]; 
 }
 
-console.log(action1(1,2))
+console.log(action1(3,5))
 
 
 
@@ -67,6 +67,39 @@ currentDayFormat()
 number and that it is between 18 and 120. If the "age" is between 18
 and 120 it will return the string of characters "You can drive"
 Otherwise it will return: " Insert a valid number"  */
+
+function action6(age){
+    if(isNaN(age)){
+        return "Insert a valid number"
+    }else if(age >= 18 && age <= 120){
+        return "You can drive"
+    }else{
+        return "Insert a valid number"
+    }
+}
+console.log(action6(20))
+
+
+/*Function that receives one parameter. If it is not an array it will return
+"Not an array". If it is an array it will return the third value of the
+array. If there is no third value, it will return "No third element”
+*/
+
+
+let array = [1,2,3]
+
+function comproveArray (array){
+    if(!Array.isArray(array)){
+        return "Not an array";
+    }
+    for (let i = 0; i < array.length; i++){
+        if(i==2){
+            return `The third element is ${array[i]}`;
+        }
+    }
+    return "No third element";
+}
+console.log(comproveArray(array))
 
 
 

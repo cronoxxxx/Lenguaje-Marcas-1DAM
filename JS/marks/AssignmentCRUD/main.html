@@ -8,7 +8,7 @@
 <body>
   <div class="container-md mt-3">
     <h1>CRUD patients</h1>
-    <button type="button" class="btn btn-success my-2" id="add" data-bs-toggle="modal" data-bs-target="#myModal">Add</button>
+    <button type="button" class="btn btn-success my-2" id="add">Add</button>
     <table class="table table-striped table-bordered">
       <thead>
         <tr>
@@ -23,6 +23,9 @@
 
       <tbody id="bodytable"></tbody>
     </table>
+    <div class="col-sm-4 ml-3" id="infoContainer"> <!--Crud 4-->
+
+    </div>
   </div>
 
   <div class="modal" id="addpatientModal">
@@ -38,17 +41,94 @@
           <div class="mb-3">
             <label for="addpatientName" class="form-label">patient Name</label>
             <input type="text" name="" id="addpatientName" class="form-control" required />
+          </div>.
+          <div class="mb-3">
+            <label for="addpatientName" class="form-label">patient Phone</label>
+            <input type="text" name="" id="addpatientPhone" class="form-control" required />
           </div>
         </div>
         <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-dismiss="modal">Add patient</button>
+          <button class="btn btn-primary" data-bs-dismiss="modal" id="addPatient">Add patient</button>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="modal" id="updatepatientModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="updatepatientModalLabel">
+            Update patient
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="updatepatientID" class="form-label">patient ID</label>
+            <input type="text" name="" id="updatepatientID" class="form-control" readonly />
+          </div>
+          <div class="mb-3">
+            <label for="updatepatientName" class="form-label">patient Name</label>
+            <input type="text" name="" id="updatepatientName" class="form-control"/>
+          </div>.
+          <div class="mb-3">
+            <label for="updatepatientPhone" class="form-label">patient Phone</label>
+            <input type="text" name="" id="updatepatientPhone" class="form-control" required />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" id="updatePatientB">Update patient</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="modal" id="addMedRecordModal" tabindex="-1" aria-labelledby="addMedRecordModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addMedRecordModalLabel">
+            Add new MedRecord
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+              <label for="addMedRecordDesc" class="form-label">MedRecord diagnosis</label>
+              <input type="text" id="addMedRecordDesc" class="form-control" required />
+            </div>.
+            <div class="mb-3">
+              <label for="addMedRecordDate" class="form-label">MedRecord Date</label>
+              <input type="date" id="addMedRecordDate" class="form-control" required/>
+            </div>
+            <div class="mb-3">
+              <label for="addMedRecordDoctor" class="form-label">Doctor</label>
+              <select type="text"  id="addMedRecordDoctor" class="form-select" required></select>
+            </div>
+            <div class="mb-3">
+              <label for="addMedRecordMeds" class="form-label">Medications</label>
+              <select type="text"  id="addMedRecordMeds" multiple class="form-select" required></select>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" id ="addMRB" data-bs-dismiss="modal">Add MedRecord</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <script src="assets/patients.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="assets/medRecords.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>
