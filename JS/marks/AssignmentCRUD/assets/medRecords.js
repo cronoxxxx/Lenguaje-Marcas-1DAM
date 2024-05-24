@@ -178,6 +178,8 @@ function addMedRecord (){ // obtiene los valores insertados por el usuario en el
     return selectedMeds
   }
 
+  
+
 
 
 
