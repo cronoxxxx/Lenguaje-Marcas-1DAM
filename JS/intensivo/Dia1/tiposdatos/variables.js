@@ -273,3 +273,4 @@ console.log(Object.values(objectRandom)[1])
 
 console.log(objectRandom.hasOwnProperty("nombre"))
 console.log(objectRandom.hasOwnProperty("nacimiento"))
+
